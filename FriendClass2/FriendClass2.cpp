@@ -1,10 +1,10 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 class mahasiswa {
+private:
+	string nama;
 public:
-	int nim;
-	void showNim() {
-		cout << "No Induk = " << nim << endl;
-	}
+	friend void setNama(mahasiswa& a, string);
 };
